@@ -1,0 +1,18 @@
+projects:
+  EventsAPI:
+    schemaPath: graphql/schema.json
+    includes:
+      - graphql/**/*.graphql
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        graphQLApiId: mzgbwa3p4rdepkyqtleiptghvu
+        codeGenTarget: swift
+        generatedFileName: EventsApp/EventsAPI.swift
+        docsFilePath: graphql
+        region: us-east-1
+        maxDepth: 4
+      endpoints:
+        prod: >-
+          https://qhc4zjl3jvgtxos2tq52h2g6m4.appsync-api.us-east-1.amazonaws.com/graphql
